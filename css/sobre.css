@@ -1,0 +1,103 @@
+main{
+    border: 3px solid #b21e1e;
+    border-left: 0;
+    border-right: 0;
+    min-height: 90%;
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+.line-titulo{
+    margin: 20px auto;
+    
+
+
+}
+
+.sobre .container{
+    
+    max-width: 830px;
+    width:100%;
+    margin-top: 30px;
+    
+
+}
+
+.img-destaque-sobre{
+    width: 90%;
+    padding-top: 60%;
+    background-color: lightgray;
+    margin: 0 auto;
+}
+
+.descricao-autor{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 90% ;
+
+}
+
+.descricao-autor h2{
+
+    font-size: 24px ;
+
+}
+
+.descricao-autor p{
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
+.descricao-autor2{
+    display: flex;
+    margin: 40px auto 20px;
+    padding: 0 2%;
+    width: 100%;
+}
+
+.img-small{
+    width: 30%;
+    min-width: 150px;
+    margin: 0 auto;
+    padding-top: 30%;
+    background-color: lightgray;
+}
+
+.descricao-autor2-wraper{
+    width: 60%;
+    vertical-align: top;
+    line-height: 28px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+
+
+
+@media screen and (max-width: 580px){
+.descricao-autor2{
+    flex-direction: column;
+
+}
+
+
+
+    .img-small {
+    width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    padding-top: 80%;
+}
+
+
+.descricao-autor2-wraper{
+    width: 100%;
+    margin:20px auto;
+}
+
+}

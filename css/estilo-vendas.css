@@ -1,0 +1,308 @@
+
+
+main{
+    border: 3px solid #b21e1e;
+    border-left: 0;
+    border-right: 0;
+   
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.vendas{
+    min-height: 90%;
+    padding: 90px 2%;
+}
+
+.line-titulo{max-width: 1200px;}
+
+.ln1 h2{
+    text-transform: uppercase;
+}
+
+.content-vendas{
+
+    margin-top: 40px;
+}
+
+.content-vendas .container{
+    max-width: 1200px;
+    display: flex;
+    
+
+}
+
+.sidebar{
+    width: 30%;
+
+}
+
+.search1{width: 90%;}
+
+.search1 h2, .search2 h2{
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+
+}
+
+
+.search1 .barra-preco{
+    width: 100%;
+    height: 20px;
+    margin-top: 8px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    position: relative
+
+}
+
+.br{
+
+    display: inline;
+
+}
+
+.barra-preco-fill{
+    width: 30%;
+    position: absolute;
+    height: inherit;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgb(255 ,255 ,255) , rgb(200,200,200));
+    border: inherit;
+    border-radius: inherit;
+}
+
+.pointer-barra{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: -3px;
+    left: calc(30% - 13px);
+    background-image: linear-gradient(to bottom, rgb(255 ,255 ,255) , rgb(180,180,180));
+    border-radius: 8px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.valor-pesquisa{
+    margin-top: 8px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.valor-pesquisa p{
+    color: black;
+    font-size: 15px;
+    
+}
+
+.valor-pesquisa p:nth-of-type(1){
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+
+
+}
+
+.valor-pesquisa p:nth-of-type(2){
+   position: absolute;
+   right: 0;
+   top: 0;
+   display: inline-block;
+}
+
+
+.search2{
+    margin-top: 40px;
+}
+
+.form-venda-wraper{
+    margin-top: 10px;
+}
+
+.custumize{
+    all:unset;
+    position:relative;
+    display: inline-block;
+    border: dashed 1px #CCC;
+    width:20px;
+    height: 20px;
+    background: #EEE;
+    cursor:pointer;
+  }
+  
+  
+  .custumize:checked::after{
+    content:"";
+    position:absolute;
+    width:12px;
+    height:12px;
+    left: calc(50% - 6px);
+    top: calc(50% - 6px);
+    border-radius:50%;
+    background: black;
+  }
+
+ .vitrine-venda{
+     width: 70%;
+     display: flex;
+     flex-wrap: wrap;
+ } 
+
+ .vitrine-venda .vitrine-destaque{
+     width:50%;
+     margin-top: 20px;
+ }
+
+ .vitrine-venda .vitrine-destaque h2{
+    padding-left: 8px;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: black;
+
+}
+
+.vitrine-venda .vitrine-destaque p{
+    font-size: 15px;
+    font-style: italic;
+    padding-left: 15px;
+    padding-top: 8px;
+    color: #353535;
+}
+
+.vitrine-venda .btn1{
+    line-height: 40px;
+    background-color: #eb2d2d;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border: 5px solid #b21e1e;
+    color: white;
+    font-style: italic;
+    width: 150px;
+    font-size: 16px;
+}
+
+.vitrine-venda .vitrine-destaque a{
+    margin-left: 8px;
+    margin-top: 10px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media====================================================*/
+
+@media(max-width:780px){
+
+    .content-vendas .container{
+
+        flex-direction: column;
+        
+    
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+  
+    .vitrine-venda .vitrine-destaque p{
+        font-size: .8rem;
+    }
+
+
+
+    .search2 form{
+       
+        text-align: center;
+
+    }
+
+    .search2 h2{
+      text-align: center;
+
+
+
+    }
+
+
+    .form-venda-wraper{
+        display: inline-flex;
+        margin-right: 15px;
+        justify-content: center;
+        align-items: center;
+      
+
+    }
+
+    .vitrine-venda{
+      
+       
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+
+
+}  
+    @media(max-width:580px){ 
+        
+        .br{
+
+            display: inline-flex;
+        
+        }
+
+      
+    .vitrine-venda .vitrine-destaque p{
+        font-size: 1.2rem;
+    }
+
+    .vitrine-venda .vitrine-destaque{
+        width: 80%;
+        margin: 0 auto;
+       text-align: center;
+       padding-top: 20px;
+       
+       }
+   
+
+
+}
+
+
+
+
+
+
+@media(max-width:480px){
+    .vitrine-venda .vitrine-destaque{
+         width: 100%;
+    }
+
+
+
+
+
+}
